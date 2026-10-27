@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 30px 0;
+}
+
+#informasi {
+    background-color: rgb(93, 136, 1);
+    padding: 20px;
+    border-radius: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 20px auto 0;
+}
+
+#informasi h1 {
+    text-align: center;
+    background-color: rgb(128, 187, 0);
+    margin-left: -30px;
+    margin-right: -30px;
+    margin-top: -20px;
+    padding: 20px 0;
+    color: rgb(255, 255, 255);
+}
+
+table {
+    width: 100%;
+    text-align: left;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(128, 187, 0);
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 80%;
+    box-sizing: border-box;
+}

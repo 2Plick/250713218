@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Registrasi Data Mahasiswa</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <div id="informasi">
+        <h1>Formulir Registrasi Data Mahasiswa</h1>
+
+        <form action="" method="post" enctype="multipart/form-data">
+            <table cellspacing="4" cellpadding="4">
+
+                <!-- Input nama mahasiswa -->
+                <tr>
+                    <td>
+                        <label for="namamhs"><strong>Nama Lengkap</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="namamhs" name="namamhs" size="30" />
+                    </td>
+                </tr>
+                <!-- Pilihan jenis kelamin menggunakan radio button -->
+                <tr>
+                    <td><strong>Jenis Kelamin</strong></td>
+                    <td>
+                        <input type="radio" id="laki" name="jk" value="Laki-Laki" />
+                        <label for="laki">Laki-Laki</label>
+                        <input type="radio" id="perempuan" name="jk" value="Perempuan" />
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <!-- Pilihan program studi menggunakan dropdown -->
+                <tr>
+                    <td>
+                        <label for="prodi"><strong>Program Studi</strong></label>
+                    </td>
+                    <td>
+                        <select id="prodi" name="prodi">
+                            <option>Hukum</option>
+                            <option>Kedokteran</option>
+                            <option>Ilmu komunikasi</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- Input Tempat Tinggal -->
+                <tr>
+                    <td>
+                        <label for="tinggal"><strong>Tempat Tinggal</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="tinggal" name="tinggal" size="30" />
+                    </td>
+                </tr>
+                <!-- Input nomor telepon Orang Tua-->
+                <tr>
+                    <td>
+                        <label for="teleponOrtu"><strong>Nomor Telepon Orang Tua</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="teleponOrtu" name="teleponOrtu" size="30" />
+                    </td>
+                </tr>
+                <!-- Input password -->
+                <tr>
+                    <td>
+                        <label for="password"><strong>Kata Sandi</strong></label>
+                    </td>
+                    <td>
+                        <input type="password" id="password" name="password" size="30" />
+                    </td>
+                </tr>
+                <!-- Input file untuk foto mahasiswa -->
+                <tr>
+                    <td>
+                        <label for="photo"><strong>Foto Mahasiswa</strong></label>
+                    </td>
+                    <td>
+                        <input type="file" id="photo" name="photo" accept="image/gif, image/jpeg, image/png" />
+                    </td>
+                </tr>
+                 <!-- Input nama sekolah asal -->
+                <tr>
+                    <td>
+                        <label for="asal"><strong>Daerah Asal</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="asal" name="asal" size="30" />
+                    </td>
+                </tr>
+                <!-- Pilihan hal favorit -->
+                <tr>
+                    <td><strong>Hal Favorit</strong></td>
+                    <td>
+                        <p><strong>Game</strong></p>
+                        <input type="checkbox" id="game1" name="game" value="Valorant" />
+                        <label for="game1">Valorant</label>
+
+                        <input type="checkbox" id="game2" name="game" value="Roblok" />
+                        <label for="game2">Roblok</label>
+
+                        <input type="checkbox" id="game3" name="game" value="Growtopia" />
+                        <label for="game3">Growtopia</label>
+
+                        <p><strong>Makanan</strong></p>
+                        <input type="checkbox" id="makanan1" name="makanan" value="Mie" />
+                        <label for="makanan1">Mie</label>
+
+                        <input type="checkbox" id="makanan2" name="makanan" value="Orak Arik ayam" />
+                        <label for="makanan2">Orak Arik ayam</label>
+
+                        <input type="checkbox" id="makanan3" name="makanan" value="Roti O" />
+                        <label for="makanan3">Roti O</label>
+                    </td>
+                </tr>
+                <!-- Kolom untuk menuliskan resume -->
+                <tr>
+                    <td>
+                        <label for="resume"><strong>Tentang Diri</strong></label>
+                    </td>
+                    <td>
+                        <textarea id="resume" name="resume" rows="5" cols="30"></textarea>
+                    </td>
+                </tr>
+
+                <!-- Tombol untuk menyimpan data -->
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" name="simpan" value="Daftar Sekarang" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
